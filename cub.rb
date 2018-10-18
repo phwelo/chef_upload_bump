@@ -3,7 +3,6 @@
 # Chef Upload Bump
 
 require 'io/console'
-require 'stringio'
 
 def arg_logic
   ARGV[0] || parse_cbname
@@ -29,7 +28,7 @@ def verify_file(filename)
   if File.file?("./#{filename}")
     true
   else
-    puts 'Usage: ruby cub.rb cookbookname'
+    puts 'Usage: / ruby cub.rb cookbookname'
   end
 end
 
